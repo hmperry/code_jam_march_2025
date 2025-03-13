@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__links {
+  margin: 0;
+  display: flex;
+  column-gap: 45px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  border-top: 0.5px solid #84bc78;
+}
