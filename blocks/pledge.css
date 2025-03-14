@@ -1,0 +1,11 @@
+.Pledge__wordCloud {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.pledge__word {
+  margin: 5px;
+  font-weight: 500;
+}
