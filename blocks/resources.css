@@ -2,8 +2,9 @@
   font-family: "ReenieBeanie", Arial, Helvetica, sans-serif;
   font-size: 50px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 60px;
   color: #3a426d;
+  padding: 20px;
 }
 .resources__cards {
   display: flex;
