@@ -1,12 +1,26 @@
 .footer {
-  padding: 60px 0;
-  margin: 0;
+  padding: 15px 0 60px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1280px;
+  font-size: 9px;
+  align-items: center;
+  border-top: 0.5px solid rgb(102, 102, 102);
+  margin-top: 40px;
+}
+.footer__title {
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  font-size: 11px;
+  padding-bottom: 10px;
 }
 
 .footer__content {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+  padding-bottom: 5px;
 }
