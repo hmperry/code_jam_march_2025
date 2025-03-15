@@ -15,3 +15,12 @@
   /* Replace with the correct file path */
   src: url("./fonts/FunnelSans-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "ReenieBeanie";
+  font-style: regular;
+  /* Replace with the appropriate font weight */
+  font-weight: 400;
+  /* Replace with the correct file path */
+  src: url("./fonts/ReenieBeanie-Regular.ttf") format("truetype");
+}
