@@ -18,33 +18,49 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <img
+      <header class="header__container">
+        <div class="header"><img
           src="./images/header_image.svg"
           alt="Make the Pledge logo"
           class="header__logo"
         />
-        <div>
+        
         <nav class="nav">
           
           <ul class="nav__links">
-            <li>
-              <a class="nav__link" href="#quiz">Earth Quiz</a>
+            <li class="nav__elements">
+              <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
+              <button class="nav-button">
+              <a class="nav__link" href="">Quiz</a>
+              </button>
             </li>
-            <li>
-              <a class="nav__link" href="">Take the Pledge</a>
+            <li class="nav__elements">
+              <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
+              <button class="nav-button">
+              <a class="nav__link" href="">How to Help</a>
+              </button>
             </li>
-            <li>
-              <a class="nav__link" href="">Resources</a>
+            <li class="nav__elements">
+              <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
+              <button class="nav-button nav-button__pledge">
+              <!-- <a class="" href="">Take the Pledge</a> -->
+               Take the Pledge
+              </button>
             </li>
 
       
           </ul>
+          
+          <button class="nav-button nav-button__pledge" id="nav-button__pledge_mobile">
+            <!-- <a class="" href="">Take the Pledge</a> -->
+             Take the Pledge
+            </button>
         </nav>
       </div>
       </header>
 
       <main class="content">
+        <div id="bg">
         <section class="pledge page__section">
         <h2>[Pledge Wall]</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -57,20 +73,21 @@
         <section class="resources page__section"><h2>[Resources]</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
+        </div>
       </main>
 
       <footer class="footer">
         <p class="footer__content">2025</p>
       </footer>
 
-      <div class="modal">
+      <div class="modal" id="add-pledge-modal">
         <div class="modal__container">
           <button
             type="button"
             class="modal__close-button"
             id=""
           ></button>
-          <h2 class="modal__title">Popup modal</h2>
+          <h2 class="modal__title">Make Your Pledge</h2>
 
           <form
             name=""
@@ -78,13 +95,13 @@
             id=""
             novalidate
           >
-            <label for="pledge-name-input" class="modal__label"
-              >Name
+            <label for="pledge-input" class="modal__label"
+              >What will you do to make the earth better?
               <input
                 type="text"
                 class="modal__input"
-                id="pledge-name-input"
-                name="name"
+                id="pledge-input"
+                name="pledge"
                 placeholder=""
                 required
                 minlength="2"
@@ -92,10 +109,35 @@
               />
               <!-- <span id="profile-name-input-error" class="modal__error"></span> -->
             </label>
-
-            
-
-            <button type="submit" class="modal__submit-button">Submit</button>
+            <fieldset class="modal__label modal__label_email-permission">
+              <legend class="modal__label">Would you like to be reminded periodically about your pledge?</legend>
+                <div id="modal__email-permissions">
+                  <div class="modal__email-permission-choice"><input type="radio" class="modal__input"id="email-yes" name="contact" value="yes">
+                    <label for="email-yes" class="modal__label">Yes</label>
+                  </div>
+                  <div class="modal__email-permission-choice">
+                    <input type="radio" class="modal__input"id="email-no" name="contact" value="no">
+                    <label for="email-no" class="modal__label">No</label>
+                  </div>
+                </div>
+<div class="modal__form_email-input">
+                <label for="email-input" class="modal__label" id="email-input-label">
+              Email Address
+              <input
+                type="email"
+                class="modal__input"
+                id="email-input"
+                name="email"
+                placeholder=""
+                required
+                minlength="2"
+                maxlength="40"
+              />
+            </label>
+          </div>
+              
+            </fieldset>
+            <button type="submit" class="modal__submit-button">Submit My Pledge</button>
           </form>
         </div>
       </div>
