@@ -1,7 +1,7 @@
 .Pledge__wordCloud {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: max-content;
   justify-content: center;
   margin: 0 auto;
 }

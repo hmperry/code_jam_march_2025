@@ -24,11 +24,25 @@ wordCloud.innerHTML = "";
 
 PledgeWords.forEach((pledgeWord) => {
   const span = document.createElement("span");
-  const size = Math.floor(Math.random() * 30) + 15;
+  const size = Math.floor(Math.random() * 30) + 25;
   span.textContent = pledgeWord;
   span.className = "pledge__word";
   span.style.fontSize = `${size}px`;
   span.style.color = `hsl(${Math.random() * 360}, 100%, 40%)`;
+  span.style.padding = `0 5px`;
+  span.addEventListener("mouseover", () => {
+    span.style.backgroundColor = span.style.color;
+    span.style.border = `2px solid #3A426D`;
+    span.style.color = "#fff";
+    span.style.fontSize = `${size + 5}px`;
+    span.style.transition = `color 0.5s; backgroundColor 0.5s; fontSize 0.5s`;
+  });
+  span.addEventListener("mouseleave", () => {
+    span.style.color = span.style.backgroundColor;
+    span.style.backgroundColor = "transparent";
+    span.style.border = "none";
+    span.style.fontSize = `${size}px`;
+  });
   wordCloud.appendChild(span);
 });
 
