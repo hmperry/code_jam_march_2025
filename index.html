@@ -19,172 +19,351 @@
   <body>
     <div class="page">
       <header class="header__container">
-        <div class="header"><img
-          src="./images/header_image.svg"
-          alt="Make the Pledge logo"
-          class="header__logo"
-        />
-        
-        <nav class="nav">
-          
-          <ul class="nav__links">
-            <li class="nav__elements">
-              <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
-              <button class="nav-button">
-              <a class="nav__link" href="#quiz">Energy Saver Quiz</a>
-              </button>
-            </li>
-            <li class="nav__elements">
-              <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
-              <button class="nav-button">
-              <a class="nav__link" href="#resources">Resources</a>
-              </button>
-            </li>
-            <li class="nav__elements">
-              <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
-              <button class="nav-button nav-button__pledge">
-              <!-- <a class="" href="">Take the Pledge</a> -->
-               Take the Pledge
-              </button>
-            </li>
+        <div class="header">
+          <img
+            src="./images/header_image.svg"
+            alt="Make the Pledge logo"
+            class="header__logo"
+          />
 
-      
-          </ul>
-          
-          <button class="nav-button nav-button__pledge" id="nav-button__pledge_mobile">
-            <!-- <a class="" href="">Take the Pledge</a> -->
-             Take the Pledge
+          <nav class="nav">
+            <ul class="nav__links">
+              <li class="nav__elements">
+                <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
+                <button class="nav-button">
+                  <a class="nav__link" href="#quiz">Energy Saver Quiz</a>
+                </button>
+              </li>
+              <li class="nav__elements">
+                <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
+                <button class="nav-button">
+                  <a class="nav__link" href="#resources">Resources</a>
+                </button>
+              </li>
+              <li class="nav__elements">
+                <!-- <img src="./images/icons/placeholder.svg" alt="" class="nav__image"> -->
+                <button class="nav-button nav-button__pledge">
+                  <!-- <a class="" href="">Take the Pledge</a> -->
+                  Take the Pledge
+                </button>
+              </li>
+            </ul>
+
+            <button
+              class="nav-button nav-button__pledge"
+              id="nav-button__pledge_mobile"
+            >
+              <!-- <a class="" href="">Take the Pledge</a> -->
+              Take the Pledge
             </button>
-        </nav>
-      </div>
+          </nav>
+        </div>
       </header>
 
       <main class="content">
         <div id="bg">
-        <section class="pledge page__section">
-          <h2 class="pledge__caption">Pledge Wall</h2>  
-          <div class="Pledge__wordCloud" id="wordCloud"></div> 
-        </section>
+          <section class="pledge page__section">
+            <h2 class="pledge__caption">Pledge Wall</h2>
+            <div class="Pledge__wordCloud" id="wordCloud"></div>
+          </section>
 
-        <section class="quiz page__section">
-          <h2 class="quiz__title" id="quiz">Energy Saver Quiz</h2>
-          <form action="" class="quiz__Questions">
-            <div class="quiz__Question">
-              <label for="shower-minutes" class="quiz__Question_Desc">How many minutes do you typically spend in the shower?
-                <input type="number" id="shower-minutes" class="quiz__Question_number_Answer" placeholder="enter minutes here"/>
-              </label>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">Do you turn off the water while you brush your teeth?</p>
+          <section class="quiz page__section">
+            <h2 class="quiz__title" id="quiz">Energy Saver Quiz</h2>
+            <form action="" class="quiz__Questions">
+              <div class="quiz__Question">
+                <label for="shower-minutes" class="quiz__Question_Desc"
+                  >How many minutes do you typically spend in the shower?
+                  <input
+                    type="number"
+                    id="shower-minutes"
+                    class="quiz__Question_number_Answer"
+                    placeholder="enter minutes here"
+                  />
+                </label>
+              </div>
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  Do you turn off the water while you brush your teeth?
+                </p>
                 <div class="quiz__Checkboxes">
-                  <label for="brush-teeth-yes" class="quiz__Question_choice">Yes
-                    <input name="brush-teeth" type="radio" id="brush-teeth-yes" class="quiz__Question_choice_Answer"/>
+                  <label for="brush-teeth-yes" class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="brush-teeth"
+                      type="radio"
+                      id="brush-teeth-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
                   </label>
-                  <label for="brush-teeth-sometimes" class="quiz__Question_choice">Sometimes
-                    <input name="brush-teeth" type="radio" id="brush-teeth-sometimes" class="quiz__Question_choice_Answer"/>
+                  <label
+                    for="brush-teeth-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="brush-teeth"
+                      type="radio"
+                      id="brush-teeth-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
                   </label>
-                  <label for="brush-teeth-no" class="quiz__Question_choice">No
-                    <input name="brush-teeth" type="radio" id="brush-teeth-no" class="quiz__Question_choice_Answer"/>
+                  <label for="brush-teeth-no" class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="brush-teeth"
+                      type="radio"
+                      id="brush-teeth-no"
+                      class="quiz__Question_choice_Answer"
+                    />
                   </label>
                 </div>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">When washing dishes by hand, do you leave the water running?</p>
-              <div class="quiz__Checkboxes">
-                <label for="hand-wash-dish-yes" class="quiz__Question_choice">Yes
-                  <input name="hand-wash" type="radio" id="hand-wash-dish-yes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="hand-wash-dish-sometimes" class="quiz__Question_choice">Sometimes
-                  <input name="hand-wash" type="radio" id="hand-wash-dish-sometimes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="hand-wash-dish-no" class="quiz__Question_choice">No
-                  <input name="hand-wash" type="radio" id="hand-wash-dish-no" class="quiz__Question_choice_Answer"/>
+              </div>
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  When washing dishes by hand, do you leave the water running?
+                </p>
+                <div class="quiz__Checkboxes">
+                  <label for="hand-wash-dish-yes" class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="hand-wash"
+                      type="radio"
+                      id="hand-wash-dish-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="hand-wash-dish-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="hand-wash"
+                      type="radio"
+                      id="hand-wash-dish-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label for="hand-wash-dish-no" class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="hand-wash"
+                      type="radio"
+                      id="hand-wash-dish-no"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="quiz__Question">
+                <label for="dishwasher-cycles" class="quiz__Question_Desc"
+                  >How many times do you run the dishwasher per week?
+                  <input
+                    type="number"
+                    id="dishwasher-cycles"
+                    class="quiz__Question_number_Answer"
+                    placeholder="enter count here"
+                  />
                 </label>
               </div>
-            </div>
-            <div class="quiz__Question">
-              <label for="dishwasher-cycles" class="quiz__Question_Desc">How many times do you run the dishwasher per week?
-                <input type="number" id="dishwasher-cycles" class="quiz__Question_number_Answer" placeholder="enter count here"/>
-              </label>
-            </div>
-            <div class="quiz__Question">
-              <label for="lawn-watering" class="quiz__Question_Desc">How often do you water your lawn or garden?
-                <input type="number" id="lawn-watering" class="quiz__Question_number_Answer" placeholder="enter minutes here"/>
-              </label>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">Do you turn off the lights when you leave a room?</p>
-              <div class="quiz__Checkboxes">
-                <label for="lights-off-yes" class="quiz__Question_choice">Yes
-                  <input name="lights-off" type="radio" id="lights-off-yes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="lights-off-sometimes" class="quiz__Question_choice">Sometimes
-                  <input name="lights-off" type="radio" id="lights-off-sometimes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="lights-off-no" class="quiz__Question_choice">No
-                  <input name="lights-off" type="radio" id="lights-off-no" class="quiz__Question_choice_Answer"/>
+              <div class="quiz__Question">
+                <label for="lawn-watering" class="quiz__Question_Desc"
+                  >How often do you water your lawn or garden?
+                  <input
+                    type="number"
+                    id="lawn-watering"
+                    class="quiz__Question_number_Answer"
+                    placeholder="enter minutes here"
+                  />
                 </label>
               </div>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">Do you unplug electronics when they are not in use?</p>
-              <div class="quiz__Checkboxes">
-                <label for="unplug-electronics-yes" class="quiz__Question_choice">Yes
-                  <input name="unplug-electronics" type="radio" id="unplug-electronics-yes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="unplug-electronics-sometimes" class="quiz__Question_choice">Sometimes
-                  <input name="unplug-electronics" type="radio" id="unplug-electronics-sometimes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="unplug-electronics-no" class="quiz__Question_choice">No
-                  <input name="unplug-electronics" type="radio" id="unplug-electronics-no" class="quiz__Question_choice_Answer"/>
-                </label>
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  Do you turn off the lights when you leave a room?
+                </p>
+                <div class="quiz__Checkboxes">
+                  <label for="lights-off-yes" class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="lights-off"
+                      type="radio"
+                      id="lights-off-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="lights-off-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="lights-off"
+                      type="radio"
+                      id="lights-off-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label for="lights-off-no" class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="lights-off"
+                      type="radio"
+                      id="lights-off-no"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">Do you use a ceiling fan instead of air conditioning when possible?</p>
-              <div class="quiz__Checkboxes">
-                <label for="ceiling-fan-yes" class="quiz__Question_choice">Yes
-                  <input name="ceiling-fan" type="radio" id="ceiling-fan-yes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="ceiling-fan-sometimes" class="quiz__Question_choice">Sometimes
-                  <input name="ceiling-fan" type="radio" id="ceiling-fan-sometimes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="ceiling-fan-no" class="quiz__Question_choice">No
-                  <input name="ceiling-fan" type="radio" id="ceiling-fan-no" class="quiz__Question_choice_Answer"/>
-                </label>
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  Do you unplug electronics when they are not in use?
+                </p>
+                <div class="quiz__Checkboxes">
+                  <label
+                    for="unplug-electronics-yes"
+                    class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="unplug-electronics"
+                      type="radio"
+                      id="unplug-electronics-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="unplug-electronics-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="unplug-electronics"
+                      type="radio"
+                      id="unplug-electronics-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="unplug-electronics-no"
+                    class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="unplug-electronics"
+                      type="radio"
+                      id="unplug-electronics-no"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">Do you charge your phone overnight?</p>
-              <div class="quiz__Checkboxes">
-                <label for="charge-phone-yes" class="quiz__Question_choice">Yes
-                  <input name="charge-phone" type="radio" id="charge-phone-yes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="charge-phone-sometimes" class="quiz__Question_choice">Sometimes
-                  <input name="charge-phone" type="radio" id="charge-phone-sometimes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="charge-phone-no" class="quiz__Question_choice">No
-                  <input name="charge-phone" type="radio" id="charge-phone-no" class="quiz__Question_choice_Answer"/>
-                </label>
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  Do you use a ceiling fan instead of air conditioning when
+                  possible?
+                </p>
+                <div class="quiz__Checkboxes">
+                  <label for="ceiling-fan-yes" class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="ceiling-fan"
+                      type="radio"
+                      id="ceiling-fan-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="ceiling-fan-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="ceiling-fan"
+                      type="radio"
+                      id="ceiling-fan-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label for="ceiling-fan-no" class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="ceiling-fan"
+                      type="radio"
+                      id="ceiling-fan-no"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="quiz__Question">
-              <p class="quiz__Question_Desc">Do you use a programmable thermostat to manage heating and cooling?</p>
-              <div class="quiz__Checkboxes">
-                <label for="thermostat-yes" class="quiz__Question_choice">Yes
-                  <input name="thermostat" type="radio" id="thermostat-yes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="thermostat-sometimes" class="quiz__Question_choice">Sometimes
-                  <input name="thermostat" type="radio" id="thermostat-sometimes" class="quiz__Question_choice_Answer"/>
-                </label>
-                <label for="thermostat-no" class="quiz__Question_choice">No
-                  <input name="thermostat" type="radio" id="thermostat-no" class="quiz__Question_choice_Answer"/>
-                </label>
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  Do you charge your phone overnight?
+                </p>
+                <div class="quiz__Checkboxes">
+                  <label for="charge-phone-yes" class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="charge-phone"
+                      type="radio"
+                      id="charge-phone-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="charge-phone-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="charge-phone"
+                      type="radio"
+                      id="charge-phone-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label for="charge-phone-no" class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="charge-phone"
+                      type="radio"
+                      id="charge-phone-no"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                </div>
               </div>
-            </div>
-          </form> 
+              <div class="quiz__Question">
+                <p class="quiz__Question_Desc">
+                  Do you use a programmable thermostat to manage heating and
+                  cooling?
+                </p>
+                <div class="quiz__Checkboxes">
+                  <label for="thermostat-yes" class="quiz__Question_choice"
+                    >Yes
+                    <input
+                      name="thermostat"
+                      type="radio"
+                      id="thermostat-yes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label
+                    for="thermostat-sometimes"
+                    class="quiz__Question_choice"
+                    >Sometimes
+                    <input
+                      name="thermostat"
+                      type="radio"
+                      id="thermostat-sometimes"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                  <label for="thermostat-no" class="quiz__Question_choice"
+                    >No
+                    <input
+                      name="thermostat"
+                      type="radio"
+                      id="thermostat-no"
+                      class="quiz__Question_choice_Answer"
+                    />
+                  </label>
+                </div>
+              </div>
+            </form>
 
-          <!-- THERE ARE TWO TYPES OF QUESTIONS BETWEEN THE 10 QUESTIONS: NUMBER ENTRY AND A CHECKBOX OF YES/NO/SOMETIMES. I IMAGINE WE CAN GET SOME JAVASCRIPT TO ROTATE THROUGH EACH QUESTION AFTER THE SUBMISSION OF THE PREVIOUS ONE.
+            <!-- THERE ARE TWO TYPES OF QUESTIONS BETWEEN THE 10 QUESTIONS: NUMBER ENTRY AND A CHECKBOX OF YES/NO/SOMETIMES. I IMAGINE WE CAN GET SOME JAVASCRIPT TO ROTATE THROUGH EACH QUESTION AFTER THE SUBMISSION OF THE PREVIOUS ONE.
             FOR NUMBER ENTRY
           <template id='quiz__numQuestion'>
             <label class="quiz__Question_Desc"></label>
@@ -208,35 +387,112 @@
             <button class="quiz__choiceQuestion_sometimes" type="submit">sometimes</button>
             <button class="quiz__choiceQuestion_no" type="submit">no</button>
             <button class="quiz__choiceQuestion_back" type="button">Back</button> -->
-        </section>
+          </section>
 
-        <section class="resources page__section" id="resources"><h2>Resources</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+          <section class="resources page__section" id="resources">
+            <h2 class="resources__caption">Resources</h2>
+            <div class="resources__cards">
+              <section class="resources__card">
+                <img
+                  src="./images/energy-star.jpg"
+                  alt=""
+                  class="resources__image"
+                />
+                <div class="resources__content">
+                  <h3 class="resources__title">Energy Star</h3>
+                  <p class="resources__description">
+                    Check the
+                    <a
+                      class="resources__link"
+                      href="https://www.energystar.gov/"
+                      >Energy Star</a
+                    >
+                    rating of any appliances you buy and go for highest rating
+                    you can afford.
+                  </p>
+                </div>
+              </section>
+              <section class="resources__card">
+                <img
+                  src="./images/commute.jpg"
+                  alt=""
+                  class="resources__image"
+                />
+                <div class="resources__content">
+                  <h3 class="resources__title">Walk Score</h3>
+                  <p class="resources__description">
+                    Before you buy or rent a home or apartment, use an app like
+                    <a class="resources__link" href="https://www.walkscore.com/"
+                      >Walk Score</a
+                    >
+                    to determine the walkability of your potential neighborhood.
+                  </p>
+                </div>
+              </section>
+              <section class="resources__card">
+                <img
+                  src="./images/home-inspection.jpg"
+                  alt=""
+                  class="resources__image"
+                />
+                <div class="resources__content">
+                  <h3 class="resources__title">Efficiency Inspection</h3>
+                  <p class="resources__description">
+                    Insulate your home.
+                    <a
+                      class="resources__link"
+                      href="https://www.nvenergy.com/save-with-powershift/energy-assessment/energy-assessment"
+                      >Get a free efficiency inspection from NV Energy</a
+                    >. Start your insulation in the attic and the roof. Install
+                    double or triple-paned, argon-filled windows. Do it
+                    super-duper: insulate your walls.
+                  </p>
+                </div>
+              </section>
+              <section class="resources__card">
+                <img
+                  src="./images/pesticide.jpg"
+                  alt=""
+                  class="resources__image"
+                />
+                <div class="resources__content">
+                  <h3 class="resources__title">
+                    Save bees and other pollinators
+                  </h3>
+                  <p class="resources__description">
+                    Stop using Roundup and other chemical weed killers. One of
+                    Rounup's ingredients,
+                    <a
+                      class="resources__link"
+                      href="https://www.honeysolutions.com/roundup-what-impact-does-this-herbicide-have-on-bees-and-food/"
+                    >
+                      kills bees and other pollinators</a
+                    >.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </section>
         </div>
       </main>
 
       <footer class="footer">
         <h4 class="footer__title">Code Jam March 2025</h4>
-        <p class="footer__content">Team 3: Brandon Dooley, McKay Perry, Anand Ragothaman, Roman Ehrhardt</p>
-        <p class="footer__content">A collaborative team competition for creating a product using the tech stack learned in the TripleTen Program.</p>
+        <p class="footer__content">
+          Team 3: Brandon Dooley, McKay Perry, Anand Ragothaman, Roman Ehrhardt
+        </p>
+        <p class="footer__content">
+          A collaborative team competition for creating a product using the tech
+          stack learned in the TripleTen Program.
+        </p>
       </footer>
 
       <div class="modal" id="add-pledge-modal">
         <div class="modal__container">
-          <button
-            type="button"
-            class="modal__close-button"
-            id=""
-          ></button>
+          <button type="button" class="modal__close-button" id=""></button>
           <h2 class="modal__title">Make Your Pledge</h2>
 
-          <form
-            name=""
-            class="modal__form"
-            id=""
-            novalidate
-          >
+          <form name="" class="modal__form" id="" novalidate>
             <label for="pledge-input" class="modal__label"
               >What will you do to make the earth better?
               <input
@@ -252,39 +508,56 @@
               <!-- <span id="profile-name-input-error" class="modal__error"></span> -->
             </label>
             <fieldset class="modal__label modal__label_email-permission">
-              <legend class="modal__label">Would you like to be reminded periodically about your pledge?</legend>
-                <div id="modal__email-permissions">
-                  <div class="modal__email-permission-choice"><input type="radio" class="modal__input"id="email-yes" name="contact" value="yes">
-                    <label for="email-yes" class="modal__label">Yes</label>
-                  </div>
-                  <div class="modal__email-permission-choice">
-                    <input type="radio" class="modal__input"id="email-no" name="contact" value="no">
-                    <label for="email-no" class="modal__label">No</label>
-                  </div>
+              <legend class="modal__label">
+                Would you like to be reminded periodically about your pledge?
+              </legend>
+              <div id="modal__email-permissions">
+                <div class="modal__email-permission-choice">
+                  <input
+                    type="radio"
+                    class="modal__input"
+                    id="email-yes"
+                    name="contact"
+                    value="yes"
+                  />
+                  <label for="email-yes" class="modal__label">Yes</label>
                 </div>
-<div class="modal__form_email-input">
-                <label for="email-input" class="modal__label" id="email-input-label">
-              Email Address
-              <input
-                type="email"
-                class="modal__input"
-                id="email-input"
-                name="email"
-                placeholder=""
-                required
-                minlength="2"
-                maxlength="40"
-              />
-            </label>
-          </div>
-              
+                <div class="modal__email-permission-choice">
+                  <input
+                    type="radio"
+                    class="modal__input"
+                    id="email-no"
+                    name="contact"
+                    value="no"
+                  />
+                  <label for="email-no" class="modal__label">No</label>
+                </div>
+              </div>
+              <div class="modal__form_email-input">
+                <label
+                  for="email-input"
+                  class="modal__label"
+                  id="email-input-label"
+                >
+                  Email Address
+                  <input
+                    type="email"
+                    class="modal__input"
+                    id="email-input"
+                    name="email"
+                    placeholder=""
+                    required
+                    minlength="2"
+                    maxlength="40"
+                  />
+                </label>
+              </div>
             </fieldset>
-            <button type="submit" class="modal__submit-button">Submit My Pledge</button>
+            <button type="submit" class="modal__submit-button">
+              Submit My Pledge
+            </button>
           </form>
         </div>
-      </div>
-
-      
       </div>
     </div>
 

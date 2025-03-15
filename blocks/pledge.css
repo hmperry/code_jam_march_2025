@@ -1,9 +1,16 @@
+.pledge__caption {
+  font-family: "ReenieBeanie", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #3a426d;
+}
 .Pledge__wordCloud {
   display: flex;
   flex-wrap: wrap;
-  max-width: max-content;
+  max-width: 1000px;
   justify-content: center;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .pledge__word {
   margin: 5px;

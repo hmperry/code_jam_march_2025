@@ -1,0 +1,41 @@
+.resources__caption {
+  font-family: "ReenieBeanie", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #3a426d;
+}
+.resources__cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.resources__card {
+  display: flex;
+  width: 46%;
+  border: 1px solid #84bc78;
+  padding: 10px;
+  border-radius: 8px;
+  gap: 10px;
+}
+.resources__image {
+  width: 200px;
+  object-fit: cover;
+}
+.resources__title {
+  margin: 0;
+  color: #3a426d;
+}
+.resources__description {
+  margin: 8px 0 8px 0;
+}
+.resources__link {
+  color: #84bc78;
+  text-decoration: none;
+  font-weight: bold;
+}
+.resources__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
