@@ -80,6 +80,8 @@
                     id="shower-minutes"
                     class="quiz__Question_number_Answer"
                     placeholder="enter minutes here"
+                    min="0"
+                    max="20"
                   />
                 </label>
               </div>
@@ -87,33 +89,34 @@
                 <p class="quiz__Question_Desc">
                   Do you turn off the water while you brush your teeth?
                 </p>
-                <div class="quiz__Checkboxes">
-                  <label for="brush-teeth-yes" class="quiz__Question_choice"
+                <div class="quiz__radio_buttons">
+                  <label for="brush-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="brush-teeth"
                       type="radio"
-                      id="brush-teeth-yes"
+                      id="brush-yes"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label
-                    for="brush-teeth-sometimes"
-                    class="quiz__Question_choice"
+                  <label for="brush-sometimes" class="quiz__Question_choice"
                     >Sometimes
                     <input
                       name="brush-teeth"
                       type="radio"
-                      id="brush-teeth-sometimes"
+                      id="brush-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label for="brush-teeth-no" class="quiz__Question_choice"
+                  <label for="brush-no" class="quiz__Question_choice"
                     >No
                     <input
                       name="brush-teeth"
                       type="radio"
-                      id="brush-teeth-no"
+                      id="brush-no"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -123,33 +126,34 @@
                 <p class="quiz__Question_Desc">
                   When washing dishes by hand, do you leave the water running?
                 </p>
-                <div class="quiz__Checkboxes">
-                  <label for="hand-wash-dish-yes" class="quiz__Question_choice"
+                <div class="quiz__radio_buttons">
+                  <label for="handwash-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="hand-wash"
                       type="radio"
-                      id="hand-wash-dish-yes"
+                      id="handwash-yes"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label
-                    for="hand-wash-dish-sometimes"
-                    class="quiz__Question_choice"
+                  <label for="handwash-sometimes" class="quiz__Question_choice"
                     >Sometimes
                     <input
                       name="hand-wash"
                       type="radio"
-                      id="hand-wash-dish-sometimes"
+                      id="handwash-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label for="hand-wash-dish-no" class="quiz__Question_choice"
+                  <label for="handwash-no" class="quiz__Question_choice"
                     >No
                     <input
                       name="hand-wash"
                       type="radio"
-                      id="hand-wash-dish-no"
+                      id="handwash-no"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -157,23 +161,27 @@
               </div>
               <div class="quiz__Question">
                 <label for="dishwasher-cycles" class="quiz__Question_Desc"
-                  >How many times do you run the dishwasher per week?
+                  >How many days do you run the dishwasher each week?
                   <input
                     type="number"
                     id="dishwasher-cycles"
                     class="quiz__Question_number_Answer"
                     placeholder="enter count here"
+                    min="0"
+                    max="7"
                   />
                 </label>
               </div>
               <div class="quiz__Question">
                 <label for="lawn-watering" class="quiz__Question_Desc"
-                  >How often do you water your lawn or garden?
+                  >How many days a week do you water your lawn or garden?
                   <input
                     type="number"
                     id="lawn-watering"
                     class="quiz__Question_number_Answer"
                     placeholder="enter minutes here"
+                    min="0"
+                    max="7"
                   />
                 </label>
               </div>
@@ -181,33 +189,34 @@
                 <p class="quiz__Question_Desc">
                   Do you turn off the lights when you leave a room?
                 </p>
-                <div class="quiz__Checkboxes">
-                  <label for="lights-off-yes" class="quiz__Question_choice"
+                <div class="quiz__radio_buttons">
+                  <label for="lights-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="lights-off"
                       type="radio"
-                      id="lights-off-yes"
+                      id="lights-yes"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label
-                    for="lights-off-sometimes"
-                    class="quiz__Question_choice"
+                  <label for="lights-sometimes" class="quiz__Question_choice"
                     >Sometimes
                     <input
                       name="lights-off"
                       type="radio"
-                      id="lights-off-sometimes"
+                      id="lights-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label for="lights-off-no" class="quiz__Question_choice"
+                  <label for="lights-no" class="quiz__Question_choice"
                     >No
                     <input
                       name="lights-off"
                       type="radio"
-                      id="lights-off-no"
+                      id="lights-no"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -217,37 +226,34 @@
                 <p class="quiz__Question_Desc">
                   Do you unplug electronics when they are not in use?
                 </p>
-                <div class="quiz__Checkboxes">
-                  <label
-                    for="unplug-electronics-yes"
-                    class="quiz__Question_choice"
+                <div class="quiz__radio_buttons">
+                  <label for="unplug-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="unplug-electronics"
                       type="radio"
-                      id="unplug-electronics-yes"
+                      id="unplug-yes"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label
-                    for="unplug-electronics-sometimes"
-                    class="quiz__Question_choice"
+                  <label for="unplug-sometimes" class="quiz__Question_choice"
                     >Sometimes
                     <input
                       name="unplug-electronics"
                       type="radio"
-                      id="unplug-electronics-sometimes"
+                      id="unplug-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label
-                    for="unplug-electronics-no"
-                    class="quiz__Question_choice"
+                  <label for="unplug-no" class="quiz__Question_choice"
                     >No
                     <input
                       name="unplug-electronics"
                       type="radio"
-                      id="unplug-electronics-no"
+                      id="unplug-no"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -258,33 +264,36 @@
                   Do you use a ceiling fan instead of air conditioning when
                   possible?
                 </p>
-                <div class="quiz__Checkboxes">
-                  <label for="ceiling-fan-yes" class="quiz__Question_choice"
+                <div class="quiz__radio_buttons">
+                  <label for="ceilingfan-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="ceiling-fan"
                       type="radio"
-                      id="ceiling-fan-yes"
+                      id="ceilingfan-yes"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
                   <label
-                    for="ceiling-fan-sometimes"
+                    for="ceilingfan-sometimes"
                     class="quiz__Question_choice"
                     >Sometimes
                     <input
                       name="ceiling-fan"
                       type="radio"
-                      id="ceiling-fan-sometimes"
+                      id="ceilingfan-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label for="ceiling-fan-no" class="quiz__Question_choice"
+                  <label for="ceilingfan-no" class="quiz__Question_choice"
                     >No
                     <input
                       name="ceiling-fan"
                       type="radio"
-                      id="ceiling-fan-no"
+                      id="ceilingfan-no"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -294,33 +303,34 @@
                 <p class="quiz__Question_Desc">
                   Do you charge your phone overnight?
                 </p>
-                <div class="quiz__Checkboxes">
-                  <label for="charge-phone-yes" class="quiz__Question_choice"
+                <div class="quiz__radio_buttons">
+                  <label for="charge-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="charge-phone"
                       type="radio"
-                      id="charge-phone-yes"
+                      id="charge-yes"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label
-                    for="charge-phone-sometimes"
-                    class="quiz__Question_choice"
+                  <label for="charge-sometimes" class="quiz__Question_choice"
                     >Sometimes
                     <input
                       name="charge-phone"
                       type="radio"
-                      id="charge-phone-sometimes"
+                      id="charge-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
-                  <label for="charge-phone-no" class="quiz__Question_choice"
+                  <label for="charge-no" class="quiz__Question_choice"
                     >No
                     <input
                       name="charge-phone"
                       type="radio"
-                      id="charge-phone-no"
+                      id="charge-no"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -331,13 +341,14 @@
                   Do you use a programmable thermostat to manage heating and
                   cooling?
                 </p>
-                <div class="quiz__Checkboxes">
+                <div class="quiz__radio_buttons">
                   <label for="thermostat-yes" class="quiz__Question_choice"
                     >Yes
                     <input
                       name="thermostat"
                       type="radio"
                       id="thermostat-yes"
+                      value="10"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -349,6 +360,7 @@
                       name="thermostat"
                       type="radio"
                       id="thermostat-sometimes"
+                      value="5"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
@@ -358,11 +370,15 @@
                       name="thermostat"
                       type="radio"
                       id="thermostat-no"
+                      value="2"
                       class="quiz__Question_choice_Answer"
                     />
                   </label>
                 </div>
               </div>
+              <button type="submit" class="quiz__Submission">
+                See your results
+              </button>
             </form>
 
             <!-- THERE ARE TWO TYPES OF QUESTIONS BETWEEN THE 10 QUESTIONS: NUMBER ENTRY AND A CHECKBOX OF YES/NO/SOMETIMES. I IMAGINE WE CAN GET SOME JAVASCRIPT TO ROTATE THROUGH EACH QUESTION AFTER THE SUBMISSION OF THE PREVIOUS ONE.
@@ -562,6 +578,16 @@
         </div>
       </div>
     </div>
+<!-- ================================ Quiz Results Modal ================================ -->
+    <div class="modal" id="quiz-results-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__close-button" id=""></button>
+        <h2 class="modal__title">Energy Saver Quiz Results</h2>
+        
+
+      </div>
+    </div>
+  </div>
 
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/validation.js"></script>
