@@ -169,10 +169,12 @@ const radioBtns = quiz.querySelectorAll(".quiz__radio_buttons");
 const choiceAnswers = quiz.querySelectorAll(".quiz__Question_choice_Answer");
 let userGallons = 0;
 let userWatts = 0;
+let userScoreNum = 0;
 
 function calculateNumAnswers(event) {
   userGallons = 0;
   userWatts = 0;
+  userScoreNum = 0;
   event.preventDefault();
   numAnswers.forEach((numAnswers) => {
     if (numAnswers.id == "shower-minutes") {
@@ -214,6 +216,8 @@ function calculateChoiceAnswers() {
       }
     }
   });
+  userScoreNum = userGallons + userWatts;
+  return userScoreNum;
   // console.log(`userGallons: ${userGallons}`);
   // console.log(`userWatts: ${userWatts}`);
 }
@@ -223,32 +227,37 @@ function userScore() {
   const archetypeTwo = "Tree Hugger ";
   const archetypeThree = "Sustainable Striver";
   const archetypeFour = "Resource Reckless";
-  const userScoreNum = userGallons + userWatts;
+  // const userScoreNum = userGallons + userWatts;
   console.log(userScoreNum);
   switch (true) {
     case userScoreNum >= 0 && userScoreNum <= 25:
-      console.log(archetypeFour);
-      break;
+      return archetypeFour;
+
     case userScoreNum >= 26 && userScoreNum <= 50:
-      console.log(archetypeThree);
-      break;
+      return archetypeThree;
+
     case userScoreNum >= 51 && userScoreNum <= 75:
-      console.log(archetypeTwo);
-      break;
+      return archetypeTwo;
+
     case userScoreNum >= 76 && userScoreNum <= 100:
-      console.log(archetypeOne);
-      break;
+      return archetypeOne;
+
     default:
-      console.log(
-        `Hmmm... something is wrong here. Please check the quiz and ensure you answered all questions.`
-      );
+      return "Hmmm... something is wrong here. Please check the quiz and ensure you answered all questions.";
   }
 }
+
+const quizResultsModal = document.querySelector("#quiz-results-modal");
+const archetype = document.querySelector(".modal__archetype");
+const quizResult = document.querySelector(".modal__result");
 
 quiz.addEventListener("submit", (data) => {
   calculateNumAnswers(data);
   calculateChoiceAnswers(data);
-  userScore(data);
+  const userResult = userScore(data);
+
+  archetype.textContent = userResult;
+  quizResult.textContent = "you scored " + userScoreNum + "%";
   openModal(quizResultsModal);
 });
 
@@ -260,6 +269,3 @@ quiz.addEventListener("submit", (data) => {
 -- DONE When Submit button is submitted, ensure execution of all usage formulas.
 -- Create modal to project % score to user after submission.
 */
-
-/* ========================================= Quiz Results Modal ========================================= */
-const quizResultsModal = document.querySelector("#quiz-results-modal");

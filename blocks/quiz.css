@@ -1,5 +1,5 @@
 .quiz {
-  background-color: rgb(24, 94, 63, 0.5);
+  background-color: rgba(36, 143, 95, 0.5);
   font-size: 16px;
 }
 
@@ -21,6 +21,7 @@
   flex-direction: column;
   padding: 20px;
   position: relative;
+  font-family: "FunnelSans", Arial, Helvetica, sans-serif;
 }
 
 .quiz__Question {
@@ -52,20 +53,22 @@
   padding: 8px;
   border-radius: 6px;
   border: 0;
-  color: white;
-  background-color: rgb(24, 94, 63, 0.75);
+  background-color: rgba(36, 143, 95, 0.5);
 }
 
 .quiz__Question_choice {
-  margin-right: 10%;
+  margin-right: 45px;
 }
 
 .quiz__Question_choice_Answer {
   border-radius: 2px;
+  border: none;
 }
 
 .quiz__Submission {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 6px;
+  border: none;
 }
